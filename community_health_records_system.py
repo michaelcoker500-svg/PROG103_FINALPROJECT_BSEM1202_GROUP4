@@ -1,5 +1,3 @@
-
-
 import tkinter as tk                    # main GUI library — creates windows, buttons, labels
 from tkinter import ttk, messagebox     # ttk = styled table/tabs, messagebox = pop-up alerts
 from datetime import datetime  # reads date and time from the computer clock
@@ -16,7 +14,6 @@ USERS = {
     "drjohnson": {"password": "doc456",   "role": "doctor", "name": "Dr. Johnson"},
     "drbangura": {"password": "doc789",   "role": "doctor", "name": "Dr. Bangura"},
 }
-
 
 # CONSTANTS — values that never change while the program runs
 
@@ -1585,3 +1582,5 @@ while True:
     current_user["role"]     = ""
     current_user["username"] = ""
     # The while loop continues — show_login() runs again automatically
+
+#matplotlib.use("TkAgg")  # use TkAgg backend for matplotlib to work with Tkinter
